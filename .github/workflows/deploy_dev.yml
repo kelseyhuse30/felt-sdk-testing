@@ -1,4 +1,4 @@
-name: Deploy Production
+name: Deploy Development
 
 on:
   push:
@@ -15,7 +15,7 @@ jobs:
     with:
       node-version: 20
   - run: npm ci
-  - run: npm run build -- --mode production
+  - run: npm run build -- --mode development
   - uses: peaceiris/actions-gh-pages@v4
     with:
       github_token: ${{ secrets.GITHUB_TOKEN }}
