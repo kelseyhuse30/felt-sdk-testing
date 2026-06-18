@@ -80,6 +80,7 @@ function FeltSidebar({ felt }: { felt: FeltController | null }) {
       {felt ? (
         <FeltContext.Provider value={felt}>
           <Stack flex={1} gap={0} overflow="hidden">
+          HI I'm in DEV!
             <LayersList />
           </Stack>
 
